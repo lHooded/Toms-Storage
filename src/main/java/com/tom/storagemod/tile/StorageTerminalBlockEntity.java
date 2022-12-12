@@ -153,7 +153,7 @@ public class StorageTerminalBlockEntity extends BlockEntity implements MenuProvi
 			else return player.getLevel() == level;
 		}
 		d = Math.max(d, termReach);
-		return player.getLevel() == level && !(player.distanceToSqr(this.worldPosition.getX() + 0.5D, this.worldPosition.getY() + 0.5D, this.worldPosition.getZ() + 0.5D) > d*2*d*2);
+		return player.getLevel() == level && !(player.distanceToSqr(this.worldPosition.getX() + 0.5D, this.worldPosition.getY() + 0.5D, this.worldPosition.getZ() + 0.5D) > d*d);
 	}
 
 	public int getSorting() {
